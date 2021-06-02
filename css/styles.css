@@ -1,18 +1,14 @@
-h1 {
-  color: blue;
-}
-
-.highlight {
-  color: deepblue;
-}
-
-#products {
-  color: black;
+p {
+  padding: 10px 20px;
+  border: 5px solid blue;
 }
 
 .box {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(dodgerblue, yellow, tomato);
-  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid orange;
+  box-sizing: border-box;
+  display: inline-block;
 }
