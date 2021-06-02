@@ -1,12 +1,18 @@
-p::first-letter {
-	font-size: 140%;
-	font-weight: bold;
+h1 {
+  color: blue;
 }
 
-p::first-line {
-	font-weight: bold;
+.highlight {
+  color: deepblue;
 }
 
-::selection {
-	background-color: pink;
+#products {
+  color: black;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(dodgerblue, yellow, tomato);
+  margin: auto;
 }
