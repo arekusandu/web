@@ -1,19 +1,69 @@
 .container {
-  border: 3px solid black;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  justify-items: center;
+  align-items: center;
 }
 
 .box {
   width: 5rem;
   height: 5rem;
-  background: gold;
-  margin: 1rem;
+  background-color: red;
+}
+
+.container-one {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
 }
 
 .box-one {
-  align-self: flex-end;
+  background-color: green;
+}
+
+.container-two {
+  display: grid;
+  grid-template: 100px auto 100px / 30fr 70fr;
+  gap: 10px;
+}
+
+.box-two {
   background-color: blue;
+}
+
+.container-three {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  gap: 10px;
+}
+
+.box-three {
+  background-color: gold;
+}
+
+.box-three-1 {
+  background-color: blue;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.container-four {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    ". footer";
+  gap: 10px;
+}
+
+.box-four {
+  background-color: orange;
+}
+.box-four-1 {
+  /*grid-column: 1 / span 2; */
+  grid-area: header;
+}
+
+.box-footer {
+  grid-area: footer;
 }
