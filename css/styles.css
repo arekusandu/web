@@ -1,26 +1,15 @@
-body {
-  height: 200vh;
-}
-
-.boxes {
+.tweet {
   border: 3px solid black;
 }
 
-.box {
+.avatar {
   width: 5rem;
   height: 5rem;
-}
-
-.box-one {
-  background-color: red;
-}
-
-.box-two {
-  background-color: green;
-  position: fixed;
-  top: 0px;
-}
-
-.box-three {
   background-color: blue;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.clear {
+  clear: both;
 }
