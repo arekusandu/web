@@ -4,4 +4,3 @@
 - HTTP requests
 - HTML5
 - CSS
-- Layout

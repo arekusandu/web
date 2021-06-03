@@ -1,69 +1,28 @@
 .container {
-  display: grid;
-  grid-template: repeat(3, 100px) / repeat(2, 100px);
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .box {
-  width: 5rem;
-  height: 5rem;
-  background-color: red;
+  background: gold;
+  padding: 1rem;
 }
 
-.container-one {
-  display: grid;
-  grid-template: repeat(3, 100px) / repeat(2, 100px);
+.box:nth-of-type(2) {
+  background: dodgerblue;
 }
 
-.box-one {
-  background-color: green;
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
 }
 
-.container-two {
-  display: grid;
-  grid-template: 100px auto 100px / 30fr 70fr;
-  gap: 10px;
-}
-
-.box-two {
-  background-color: blue;
-}
-
-.container-three {
-  display: grid;
-  grid-template: repeat(3, 100px) / repeat(2, 100px);
-  gap: 10px;
-}
-
-.box-three {
-  background-color: gold;
-}
-
-.box-three-1 {
-  background-color: blue;
-  grid-column: 1 / span 2;
-  grid-row: 2;
-}
-
-.container-four {
-  display: grid;
-  grid-template: repeat(3, 100px) / repeat(2, 100px);
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    ". footer";
-  gap: 10px;
-}
-
-.box-four {
-  background-color: orange;
-}
-.box-four-1 {
-  /*grid-column: 1 / span 2; */
-  grid-area: header;
-}
-
-.box-footer {
-  grid-area: footer;
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background: white;
+  }
 }
