@@ -1,15 +1,19 @@
-.tweet {
+.container {
   border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-.avatar {
+.box {
   width: 5rem;
   height: 5rem;
-  background-color: blue;
-  float: left;
-  margin-right: 0.5rem;
+  background: gold;
+  margin: 1rem;
 }
 
-.clear {
-  clear: both;
+.box-one {
+  align-self: flex-end;
+  background-color: blue;
 }
