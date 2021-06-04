@@ -1,6 +1,7 @@
 # web
 
-- DOM manipulation
-- HTTP requests
+- DOM
+- HTTP
 - HTML5
 - CSS
+- Devtools
