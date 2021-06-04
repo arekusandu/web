@@ -17,12 +17,26 @@
 }
 
 body {
+  font-size: 1rem;
   margin: 10px;
   font-family: "Open Sans", "opensans", Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Roboto, Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 4.209rem;
+}
+
+h2 {
+  font-size: 3.157rem;
 }
 
 p {
@@ -30,4 +44,10 @@ p {
   font-weight: normal;
   font-size: 1rem;
   color: #333;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 130%;
+  }
 }
