@@ -8,19 +8,10 @@
     <title></title>
   </head>
   <body>
-    <img
-      src="images/meal.jpg"
-      alt="A bowl of salmon"
-      class="meal"
-      srcset="
-        images/meal.jpg     400w,
-        images/meal@2x.jpg  800w,
-        images/meal@3x.jpg 1200w
-      "
-      sizes="
-        (max-width:500px) 100vw,
-        (max-width:700px) 50vw,
-        33vw"
-    />
+    <picture>
+      <source srcset="images/meal.webp" type="image/webp" media="" />
+      <source srcset="images/meal.jpg" type="image/jpg" media="" />
+      <img src="images/meal.jpg" alt="A bowl of salmon and curry" />
+    </picture>
   </body>
 </html>
