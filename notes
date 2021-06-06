@@ -1,6 +1,0 @@
-# Supporting high density screens
-Scale factor 2x
-- Physical resolution: 960x640 
-- Logical resolution: 480x320
-- Device pixel ratio: 2 
-- High density: DPR > 1
