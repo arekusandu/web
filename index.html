@@ -12,9 +12,14 @@
     <title></title>
   </head>
   <body>
-    <form action="index_submit" method="get" accept-charset="utf-8">
-      <input type="email" placeholder="Email" value="" name="" id="" />
-      <textarea placeholder="Message"></textarea>
+    <form>
+      <input type="text" list="letters" autocomplete="off" />
+      <datalist id="letters" name="">
+        <option data-value="1">A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+      </datalist>
     </form>
   </body>
 </html>
