@@ -1,7 +1,2 @@
 # web
-
-- DOM
-- HTTP
-- HTML5
-- CSS
-- Devtools
+https://magnafanta.netlify.app
